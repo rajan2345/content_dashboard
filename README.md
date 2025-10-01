@@ -1,4 +1,4 @@
-# Personalized Content Dashboard - SDE Intern Assignment
+# Personalized Content Dashboard 
 
 ## 🎯 Project Overview
 
@@ -171,33 +171,6 @@ npm run preview
 - User reorders content via drag-and-drop
 - User switches between light/dark mode
 
-## 🔄 Real API Integration Guide
-
-Currently using mock data. To integrate real APIs:
-
-### News API Integration
-```typescript
-// In contentSlice.ts, replace fetchContent implementation:
-const response = await fetch(
-  `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${API_KEY}`
-);
-const data = await response.json();
-```
-
-### TMDB API Integration
-```typescript
-const response = await fetch(
-  `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
-);
-const data = await response.json();
-```
-
-### Environment Variables
-Create a `.env` file:
-```env
-VITE_NEWS_API_KEY=your_news_api_key
-VITE_TMDB_API_KEY=your_tmdb_api_key
-```
 
 ## 📋 Assignment Checklist
 
@@ -277,14 +250,3 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 - **@dnd-kit**: Modern drag-and-drop
 - **Radix UI**: Accessible component primitives
 - **Lucide React**: Beautiful icon system
-
-## 🚀 Future Enhancements
-
-- WebSocket integration for real-time updates
-- User authentication with profile customization
-- Multi-language support (i18next)
-- Advanced filtering (date ranges, sources)
-- Content recommendations using ML
-- Social sharing features
-- PWA capabilities
-- Analytics integration
